@@ -4,10 +4,11 @@ import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
 
-const images = [img1, img2, img3]
+const images = [img1, img2, img3];
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,6 +25,7 @@ const Hero = () => {
           <img
             key={index}
             src={img}
+            alt="background"
             className={index === current ? "active" : ""}
           />
         ))}
@@ -32,7 +34,21 @@ const Hero = () => {
       <div className="hero-content">
         <h1>Transformando vidas através do esporte</h1>
         <p>Educação, disciplina e esperança para jovens</p>
+
+      <div className="hero-buttons">
+        <a href="#ajudar" className="btn primary"> 
+          Apoiar o Projeto
+        </a>
+
+        <a href="#ajudar" className="btn outline">
+          Seja Voluntário
+        </a>
+       
       </div>
+
+      </div>
+      
+      
     </section>
   );
 };

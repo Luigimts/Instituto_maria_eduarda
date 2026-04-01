@@ -1,0 +1,115 @@
+/* NAVBAR BASE */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+/* Quando rolar a página */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Container */
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.logo span {
+  color: #a855f7;
+}
+
+/* Desktop Links */
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+/* Link com animação */
+.nav-link {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #a855f7;
+}
+
+/* Linha animada */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #a855f7;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Botão Mobile */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.mobile-link {
+  padding: 12px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.mobile-link:hover {
+  color: #a855f7;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}

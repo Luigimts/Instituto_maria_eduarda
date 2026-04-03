@@ -16,7 +16,7 @@ html, body, #root {
   color: white;
 }
 
-/* Background imagens */
+
 
 .hero-bg {
   position: absolute;
@@ -39,7 +39,7 @@ html, body, #root {
   opacity: 1;
 }
 
-/* Overlay escuro */
+
 
 .hero::after {
   content: "";
@@ -49,7 +49,7 @@ html, body, #root {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* Conteúdo */
+
 
 .hero-content {
   position: relative;
@@ -101,19 +101,19 @@ html, body, #root {
   transition: 0.3s;
 }
 
-/* botão principal */
+
 .btn.primary {
   background: #ff6b00;
   color: white;
 }
 
-/* botão secundário */
+
 .btn.outline {
   border: 2px solid white;
   color: white;
 }
 
-/* hover */
+
 .btn:hover {
   transform: scale(1.05);
 }

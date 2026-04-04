@@ -1,0 +1,46 @@
+.projeto {
+  background: #050505;
+  color: white;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projeto h2 {
+  font-size: 2.5rem;
+  color: #a855f7;
+  margin-bottom: 20px;
+}
+
+.intro {
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+
+.projeto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.bloco:hover {
+  border-color: #a855f7;
+  transform: translateY(-3px);
+}
+
+
+.destaque {
+  border: 2px solid #bc55f7;
+}
+
+
+.final {
+  margin-top: 40px;
+  font-weight: bold;
+  color: #aaa;
+}

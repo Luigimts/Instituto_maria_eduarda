@@ -1,50 +1,60 @@
-function Projetos() {
-  const projetos = [
-    {
-      titulo: "Boxe & Esporte",
-      descricao:
-        "Treinamentos de boxe e atividades esportivas que promovem disciplina, saúde e autoconfiança para jovens da comunidade.",
-    },
-    {
-      titulo: "Ações Sociais",
-      descricao:
-        "Iniciativas comunitárias que vão além do esporte, oferecendo apoio, educação e acolhimento às famílias.",
-    },
-    {
-      titulo: "Eventos",
-      descricao:
-        "Competições, encontros e eventos que conectam a comunidade e dão visibilidade ao potencial de cada jovem.",
-    },
-  ];
+import "./Projeto.css";
+import { Calendar, Users, Flame } from "lucide-react";
 
+const Projeto = () => {
   return (
-    <section id="projetos" style={{ padding: "80px 20px" }}>
-      <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
-        Nossos Projetos
-      </h2>
+    <section className="projeto">
+      <div className="container">
 
-      <div
-        style={{
-          display: "grid",
-          gap: "20px",
-        }}
-      >
-        {projetos.map((proj, index) => (
-          <div
-            key={index}
-            style={{
-              border: "1px solid #333",
-              padding: "20px",
-              borderRadius: "10px",
-            }}
-          >
-            <h3>{proj.titulo}</h3>
-            <p>{proj.descricao}</p>
+        <h2>Mais do que treino. Um caminho.</h2>
+
+        <p className="intro">
+          Aqui, o esporte é ferramenta de transformação.
+          Cada treino desenvolve o físico, a mente e o caráter.
+        </p>
+
+        
+        <div className="projeto-grid">
+
+          <div className="bloco fade">
+            <Calendar size={32} color="#a855f7" />
+            <h3>Como funciona</h3>
+            <p>Sexta-feira às 16:00</p>
+            <p>Unidos da Tijuca – Borel</p>
           </div>
-        ))}
+
+          <div className="bloco fade">
+            <Users size={32} color="#a855f7" />
+            <h3>Quem pode participar</h3>
+            <p>7 a 17 anos → gratuito</p>
+            <p>18+ → R$ 70,00</p>
+          </div>
+
+          <div className="bloco fade">
+            <Flame size={32} color="#a855f7" />
+            <h3>O que ensinamos</h3>
+            <p>Muay Thai • Kickboxing</p>
+          </div>
+
+          <div className="bloco fade">
+            <h3>Disciplina e formação</h3>
+            <p>Respeito • Disciplina • Postura</p>
+          </div>
+
+          <div className="bloco destaque fade">
+            <h3>Nosso objetivo</h3>
+            <p>Chegar a 100 alunos com mais estrutura.</p>
+          </div>
+
+        </div>
+
+        <p className="final">
+          Transformando vidas todos os dias.
+        </p>
+
       </div>
     </section>
   );
-}
+};
 
-export default Projetos;
+export default Projeto;

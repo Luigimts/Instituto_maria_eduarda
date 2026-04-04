@@ -62,7 +62,7 @@ html, body, #root {
   align-items: center;
 
   text-align: center;
-  color: blueviolet;
+  color: rgb(218, 182, 252);
   padding: 20px;
 }
 
@@ -103,7 +103,7 @@ html, body, #root {
 
 
 .btn.primary {
-  background: #ff6b00;
+  background: #910fdb;
   color: white;
 }
 

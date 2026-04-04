@@ -4,6 +4,14 @@
   padding: 80px 20px;
 }
 
+.projeto h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #a855f7;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -24,18 +32,21 @@
 
 .projeto-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
 }
 
 .bloco:hover {
-  border-color: #a855f7;
+  border-color: #600ab1;
   transform: translateY(-3px);
 }
 
 
-.destaque {
-  border: 2px solid #bc55f7;
+.bloco.destaque {
+  grid-column: 2 / 3;
+  border: 2px solid #a855f7;
+  padding: 30px;
 }
 
 

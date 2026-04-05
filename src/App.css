@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   background: #0b0b0f;
   color: #fff;
+  overflow-x: hidden;
 }
 
 section {
@@ -29,3 +30,4 @@ nav {
   z-index: 1000;
   border-bottom: 1px solid #222;
 }
+

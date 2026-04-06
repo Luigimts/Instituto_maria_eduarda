@@ -2,56 +2,58 @@
   background: #050505;
   color: white;
   padding: 80px 20px;
-   width: 100%;
-  height: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
-
-.projeto h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #a855f7;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-}
-
+ 
 .container {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
-
+ 
 .projeto h2 {
   font-size: 2.5rem;
   color: #a855f7;
   margin-bottom: 20px;
+  letter-spacing: 1px;
 }
-
+ 
 .intro {
   color: #ccc;
   margin-bottom: 50px;
 }
-
-
+ 
 .projeto-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   text-align: center;
 }
+ 
 
+@media (max-width: 768px) {
+  .projeto-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .bloco.destaque {
+    grid-column: 1; 
+  }
+}
+ 
 .bloco:hover {
   border-color: #600ab1;
   transform: translateY(-3px);
 }
-
-
+ 
 .bloco.destaque {
   grid-column: 2 / 3;
   border: 2px solid #a855f7;
   padding: 30px;
+  box-sizing: border-box;
 }
-
-
+ 
 .final {
   margin-top: 40px;
   font-weight: bold;

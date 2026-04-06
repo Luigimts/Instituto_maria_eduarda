@@ -27,25 +27,24 @@ function Gallery() {
      <Swiper
   modules={[EffectCoverflow, Autoplay]}
   effect="coverflow"
-  grabCursor={true}
   centeredSlides={true}
   loop={true}
-  slidesPerView={3}
-
-  coverflowEffect={{
-    rotate: 0,
-    stretch: 0,
-    depth: 250,
-    modifier: 1,
-    rotate: 20,
-    slideShadows: false,
-  }}
-
   autoplay={{
     delay: 3000,
     disableOnInteraction: false
   }}
-
+  breakpoints={{
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }}
+  coverflowEffect={{
+    rotate: 20,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: false,
+  }}
   className="mySwiper"
 >
         {images.map((img, index) => (

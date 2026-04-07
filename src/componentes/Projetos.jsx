@@ -3,7 +3,7 @@ import { Calendar, Users, Flame } from "lucide-react";
 
 const Projeto = () => {
   return (
-    <section className="projeto">
+    <section id="projetos" className="projeto">
       <div className="container">
 
         <h2>Mais do que treino. Um caminho.</h2>

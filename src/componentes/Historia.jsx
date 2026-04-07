@@ -3,7 +3,7 @@ import "./Historia.css";
 
  const Historia = () => {
   return (
-<section className="historia">
+<section id="historia" className="historia">
   <div className="historia-container">
     
     <h2>Nossa História</h2>

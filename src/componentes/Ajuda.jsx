@@ -30,7 +30,7 @@ const options = [
 
 function Ajuda() {
   return (
-    <section className="ajuda">
+   <section id="ajudar" className="ajuda">
       <h2>Como Ajudar</h2>
 
       <div className="ajuda-grid">

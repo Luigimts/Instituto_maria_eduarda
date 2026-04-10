@@ -3,12 +3,12 @@ import { Menu, X } from "lucide-react";
 import "./Navbar.css";
 
 const navLinks = [
-  { label: "Início",        id: "home"     },
+  { label: "Início",         id: "home"     },
   { label: "Nossa História", id: "historia" },
-  { label: "Projetos",      id: "projetos" },
-  { label: "Galeria",       id: "galeria"  },
-  { label: "Como Ajudar",   id: "Ajudar"   },
-  { label: "Contato",       id: "contato"  },
+  { label: "Projetos",       id: "projetos" },
+  { label: "Galeria",        id: "galeria"  },
+  { label: "Como Ajudar",    id: "ajudar"   },
+  { label: "Contato",        id: "contato"  },
 ];
 
 const scrollToSection = (id) => {

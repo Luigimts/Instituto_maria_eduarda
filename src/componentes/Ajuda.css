@@ -1,0 +1,160 @@
+.ajuda {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #0a0a0a, #111, #1a1a1a);
+  color: white;
+  text-align: center;
+}
+
+.ajuda h2 {
+  font-size: 2rem;
+  color: #a855f7;
+  margin-bottom: 40px;
+}
+
+.ajuda-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.ajuda-grid .card {
+  padding: 30px;
+  border-radius: 15px;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+  width: 300px;
+  height: 280px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ajuda-grid .card:hover {
+  border-color: #7c3aed;
+  transform: translateY(-5px);
+}
+
+.ajuda-grid .card h3 {
+  margin: 10px 0;
+}
+
+.ajuda-grid .card p {
+  opacity: 0.8;
+  flex: 1;
+  text-align: left;
+}
+
+
+.card-parceiro {
+  width: 600px !important;
+  height: auto !important;
+  align-items: flex-start !important;
+}
+
+
+.btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #6d28d9, #9333ea);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.parceiro-form {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 12px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form-group input:focus {
+  border-color: #a855f7;
+}
+
+.form-group input::placeholder {
+  color: #555;
+}
+
+.form-error {
+  font-size: 11px;
+  color: #f87171;
+  margin-top: 2px;
+}
+
+
+.parceiro-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.parceiro-success h3 {
+  color: #a855f7;
+  margin: 0;
+}
+
+.parceiro-success p {
+  color: #aaa;
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .ajuda-grid .card,
+  .card-parceiro {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

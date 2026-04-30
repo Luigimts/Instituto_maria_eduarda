@@ -72,7 +72,6 @@ function ParceirForm() {
   const handleDocumento = (e) => {
     const raw = e.target.value
     const digits = raw.replace(/\D/g, "")
-    // troca automaticamente entre CPF e CNPJ conforme digita
     const tipo = digits.length <= 11 ? "cpf" : "cnpj"
     setDocType(tipo)
     const formatted = tipo === "cpf" ? formatCPF(raw) : formatCNPJ(raw)
